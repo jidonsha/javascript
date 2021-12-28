@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Javascript</h1>
+    <script>
+
+        // const PI = 3.14
+        // const area = radius * PI
+        // let radius = prompt('輸入半徑');
+        // console.log(radius + 10);
+        // document.write('<h1>面積為' + area + '<h1>');        
+
+        // let email = 'jacky@gmail.com';
+        // console.log(email);
+        // console.log(typeof (email));
+        // console.log(email.length);
+        // console.log(email + '.tw');
+        // console.log(email[email.length - 1]);
+        // console.log(email.toUpperCase());
+        // console.log(email.toLowerCase());
+        // console.log(email.indexOf('@'));
+        // console.log(email.lastIndexOf());
+        // console.log(email.substring(0, 5));
+        // console.log(email.replace('jacky', 'rubio'));
+        // console.log(email.includes('jacky'));
+        // console.log('jerry' == 'jerry1');
+
+        // for (let i = 1; i < email.length; i++) {
+        //     console.log(i, email[i]);
+        // }
+
+        // let x = 10;
+        // let y = '2';
+
+        // console.log('A' > 'a');
+        // console.log(25 == '25'); //true 值一致
+        // console.log('25' === '25'); //false 值跟型態一致
+
+        // x = 10;
+        // y = 20;
+        // z = 30;
+
+        // if (x > y && x < z) {
+        //     console.log('1');
+        // }
+        // //!
+        // if (!(x > y) || x < z) {
+        //     console.log('2');
+        // }
+
+        // const x = -7.7;
+        // console.log(x);
+        // console.log(Math.ceil(x));
+        // console.log(Math.floor(x));
+        // console.log(Math.round(x));
+
+        // console.log(Math.random()); //0 ~ 0.999 浮點數
+        // console.log(Math.random() * 10); //0 ~ 9.999 浮點數
+        // //floor 為小於等於的數
+        // console.log(Math.floor(Math.random() * 10)); //0 ~ 9 整數
+        // console.log(Math.floor(Math.random() * 10) + 1); //1 ~ 10整數
+
+
+        //10~100
+        let number = 0;
+        while (number != 100) {
+            //Math.floor Math.random ()*(end start+1))+start(起始值)
+            number = Math.floor(Math.random() * (100 - 10 + 1)) + 10;
+            console.log(number);
+            // if (number == 100) {
+            //     break;
+            // }
+        }
+
+
+        const start = 1;
+        const end = 49;
+        const lotto_str = '   ';
+        for (let a = 0; a < 10; a++) {
+            document.write(`第${a + 1}組開獎號碼：`)
+            for (let i = 0; i < 6; i++) {
+                let number = Math.floor(Math.random() * (end - start + 1)) + start;
+                console.log(`第${i + 1}個號碼為：${number}`);
+                //document.write(`<h2>第${i + 1}個號碼為：${number}</h2>`);
+                //document.write(`<h2>${number}</h2>`);
+                document.write(number + lotto_str + '\n');
+            }
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
